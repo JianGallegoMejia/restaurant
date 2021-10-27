@@ -1,14 +1,41 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javaapplication22;
 
-/**
- *
- * @author Jian_Gallego
- */
 public class Order {
+    
+    private User user;
+    private Restaurant restaurant;
+    private Product[] products;
+
+    public Order(User user, Restaurant restaurant, Product[] products) {
+        this.user = user;
+        this.restaurant = restaurant;
+        this.products = products;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+    }
+
+    public Product[] getProducts() {
+        return products;
+    }
+
+    public void setProducts(Product[] products) {
+        this.products = products;
+    }
+    
+    
     
 }
